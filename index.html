@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MathGame</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Guilherme Oliveira">
+	<link rel="shortcut icon" href="images/logo.png" />
+	<link href='https://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="body">
+	<script src="mathgame.js"></script>
+
+	<div id="apagar">
+		<div id="menu">
+			<div id="submenu">
+				<h1 align="center">Math Game</h1>
+				<div class="menu-botton" id="play" onclick="dificuldade()">
+					<p style="padding:6px;">PLAY</p>
+				</div>
+				<div id="dificuldade">
+					<form>
+						<h3>Select difficulty:</h3>
+						<ul>
+							<span class="dificuldade" onclick="playgame('1')"><li>Very Easy ( 10 seconds )</li></span><br>
+							<span class="dificuldade" onclick="playgame('2')"><li>Easy (6 seconds )</li></span> <br>
+							<span class="dificuldade" onclick="playgame('3')"><li>Meddium ( 4 seconds )</li></span><br>
+							<span class="dificuldade" onclick="playgame('4')"><li>Hard ( 2 seconds )</li></span> <br>
+							<span class="dificuldade" onclick="playgame('5')"><li>Hardcore ( 1 second )</li></span>
+						</ul>
+					</form>
+				</div>
+				<div class="menu-botton" id="play" onclick="instru()">
+					<p style="padding:6px;">INSTRUCTIONS</p>
+				</div>
+				<div id="instrucoes">
+					<h3>How to play:</h3>
+					<ul>
+						<li>Get right the operations to win points, but you have to be fast the time is ticking</li>
+						<br>
+						<li>Reach new records</li>
+						<br>
+						<li>Beat your friends!</li>
+					</ul>
+				</div>
+				<br>
+				<br>
+				<h4 align="center"><span style="color:grey;"><span style="font-size:20px;">&copy;</span> Guilherme Oliveira</span></h4>
+			</div>
+		</div>
+	</div>
+	<!-- Game Window-->
+	<div id="game">
+		<div id="barra">
+		<p style="padding:10px;" id="segundos"></p>
+		</div>
+		<div id="pontos">
+			<span style="font-size:16px;">Points</span><br>0
+		</div>
+		<div id="tempo">
+			<span style="font-size:16px;">Time</span><br><span id="min">00</span>:<span id="seg">00</span>
+		</div>
+		<div id="main-container">
+			<table align="center" cellspacing="10px" class="main-table">
+				<tr>
+					<td id="num1"></td>
+					<td id="sinal"></td>
+					<td id="num2"></td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td colspan="3" id="res"></td>
+				</tr>
+			</table>
+			<form>
+				<table align="center" cellspacing="20px"  style="margin-top:60px;" class="main-table" id="tabela2">
+					<tr>
+						<td>
+							<div class="botton1" id="botao1">
+								<img src="images/check.svg" id="botao_1" height="100" onmouseover="botoes('1')" onmouseout="botoes('3')" onclick="main('1');tempo()">
+							</div>
+						</td>
+						<td>
+							<div class="botton1" id="botao2">
+								<img src="images/delete.svg" id="botao_2"height="100" onmouseover="botoes('2')" onmouseout="botoes('4')" onclick="main('2');tempo()">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div id="caixa">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

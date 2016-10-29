@@ -1,0 +1,191 @@
+body{
+    background-color: #31475D;
+    margin: 0px;
+    font-family: 'Titan One', cursive;
+
+}
+
+h1{
+    font-size: 60px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #3298D9;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight:normal;
+}
+
+#menu{
+    display: block;
+}
+
+#game{
+    margin: auto;
+    display: none;
+    background-color: grey;
+    width: 400px;
+    height: 550px;
+    margin-top: 60px;
+}
+
+#main-container{
+    height: 380px;
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+#barra {
+    height: 40px;
+    width: 400px;
+    background-color: #6E6E6E;
+    margin: auto;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+
+#pontos{
+    height: 30px;
+    width: 190px;
+    margin: auto;
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+    float:left;
+}
+
+.main-table {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.botton1{
+    height: 100px;
+    width: 100px;
+    background-color:#E8F1E9;
+    border-radius: 5px;
+    border-bottom: 4px solid #b3b3b3;
+}
+
+.botton2 {
+    height: 100px;
+    width: 100px;
+    background-color:#3298D9;
+    border-radius: 5px;
+    border-bottom: 4px solid #2A3E4C;
+}
+
+#menu-container{
+    height: 218px;
+    width: 200px;
+    position: absolute;
+    margin-top: -390px;
+    margin-left:50px;
+}
+
+.gameover{
+    height: 150px;
+    width: 200px;
+    background-color:#31475D;
+    border-radius: 5px;
+    border-bottom: 4px solid #293C4E;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.play1{
+    height: 40px;
+    width: 80px;
+    background-color:#E8F1E9;
+    border-radius: 5px;
+    border-bottom: 4px solid #b3b3b3;
+    margin: auto;
+}
+
+.play2{
+    height: 40px;
+    width: 80px;
+    background-color:#3298D9;
+    border-radius: 5px;
+    border-bottom: 4px solid #2A3E4C;
+    margin: auto;
+}
+
+#menu{
+    position: absolute;
+    top: 60px;
+    height: 450px;
+    width: 100%;
+    margin:auto;
+}
+
+#submenu{
+    margin-left: 20px;
+    height: 420px;
+    width: 400px;
+    margin:auto;
+    color: white;
+    border-left: 150px solid #31475D;
+    border-right: 150px solid #31475D;
+}
+
+#submenu ul li {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.menu-botton{
+    height: 40px;
+    width: 60%;
+    background-color:#E8F1E9;
+    border-radius: 5px;
+    border-bottom: 4px solid #b3b3b3;
+    margin: auto;
+    margin-top: 20px;
+    color: #EA4B39;
+    text-align: center;
+    font-size: 24px;
+}
+
+.menu-botton:hover{
+    height: 40px;
+    width: 60%;
+    background-color:#3298D9;
+    border-radius: 5px;
+    border-bottom: 4px solid #2A3E4C;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+#dificuldade{
+    display: none;
+}
+
+#instrucoes{
+    display: none;
+}
+
+.dificuldade:hover{
+    color: grey;
+}
+
+#tempo{
+    float: left;
+    height: 30px;
+    width: 190px;
+    color: white;
+    text-align: right;
+    font-size: 30px;
+}
